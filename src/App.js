@@ -1,8 +1,8 @@
 import { Suspense, lazy } from "react";
 import "./App.css";
-import Face from "./components/Face";
+
 const FaceD3 = lazy(() => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve(import("./components/FaceD3"));
     }, 200);
